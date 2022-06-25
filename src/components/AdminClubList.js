@@ -18,7 +18,7 @@ const AdminClubList = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="bg-white rounded-3xl w-1/2 p-5 m-10 shadow-lg">
+      <div className="bg-white rounded-3xl w-11/12 md:w-1/2 p-5 m-10 shadow-lg">
         <h1 className="font-bold text-xl mb-5">동아리 목록</h1>
         {AdminClubList.map((club) => (
           <div key={club.id} className="border-2 rounded-lg flex justify-between p-1 pl-3 pr-3 m-2">
@@ -36,12 +36,6 @@ const AdminClubList = () => {
         ))}
         <button onClick={()=> {setIsAddClub(true)}}className="rounded-full bg-yellow float-right text-white w-10 h-10 m-2"></button>
       </div>
-
-
-
-      {isAddClub && (
-        <AddClub setIsAddClub={setIsAddClub} />
-      )}
     </div>
   )
 }

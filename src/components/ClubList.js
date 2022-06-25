@@ -25,7 +25,7 @@ const ClubList = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="bg-white rounded-3xl w-1/2 p-5 m-10 shadow-lg">
+      <div className="bg-white rounded-3xl w-11/12 md:w-1/2 p-5 m-10 shadow-lg">
         <h1 className="font-bold text-xl mb-5">동아리 목록</h1>
         {clubList.map((club) => (
           <div key={club.id} className="border-2 rounded-lg flex justify-between p-1 pl-3 pr-3 m-2">
