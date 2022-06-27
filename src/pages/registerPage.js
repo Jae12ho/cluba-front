@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style.css'
 
-const registerPage = ({ isLogin, setIsLogin }) => {
+const RegisterPage = () => {
   return (
     <div className="flex flex-col items-center m-auto pt-10">
       <h1 className="yellow font-bold text-3xl m-10">회원가입</h1>
@@ -20,4 +20,4 @@ const registerPage = ({ isLogin, setIsLogin }) => {
   )
 }
 
-export default registerPage
+export default RegisterPage

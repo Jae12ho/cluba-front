@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import AdminClubList from '../../components/AdminClubList';
+import { IsLoginContext } from '../../App';
 
 const AdminPage = () => {
-  const [isAdmin, setIsAdmin] = useState(true);
+  const { isLogin, isAdmin } = useContext(IsLoginContext);
 
   return (
     <div>

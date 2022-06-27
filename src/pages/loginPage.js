@@ -1,7 +1,7 @@
 import React from 'react'
 import "../style.css";
 
-const loginPage = ({ isLogin, setIsLogin }) => {
+const LoginPage = () => {
   return (
     <div className="flex flex-col items-center m-auto pt-10">
       <h1 className="yellow font-bold text-3xl m-10">로그인</h1>
@@ -15,4 +15,4 @@ const loginPage = ({ isLogin, setIsLogin }) => {
   )
 }
 
-export default loginPage
+export default LoginPage

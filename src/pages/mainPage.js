@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ClubList from '../components/ClubList'
+import { IsLoginContext } from '../App'
 
-const mainPage = ({ isLogin, setIsLogin }) => {
+const MainPage = () => {
+  const { isLogin, isAdmin } = useContext(IsLoginContext);
   return (
     <div>
       {
@@ -20,4 +22,4 @@ const mainPage = ({ isLogin, setIsLogin }) => {
   )
 }
 
-export default mainPage
+export default MainPage

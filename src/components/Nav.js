@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import '../style.css'
+import { IsLoginContext } from '../App';
 
-const Nav = ({ isLogin, setIsLogin }) => {
+const Nav = () => {
   const [onDropdown, setOnDropdown] = useState(false);
-  
+  const { isLogin, setIsLogin, isAdmin } = useContext(IsLoginContext);
+
   const myMenuHandle = () => {
     setOnDropdown(!onDropdown);
   }
